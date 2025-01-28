@@ -15,6 +15,11 @@ body{
     background-color: darkgray;
     overflow-x: hidden;
 }
+body p{
+    font-size: x-large;
+    font-weight: 600;
+    color: black;
+}
 /* custom scroll bar css */
 
 ::-webkit-scrollbar{
@@ -189,6 +194,12 @@ section{
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+
+.custom-butn a{
+    text-decoration: none;
+    color: white;
+
 }
 
 section .main{

@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins',sans-serif ;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -172,10 +172,25 @@ nav{
     }
 }
 
+
+/* main section css start */
+
 section{
     width: 100%;
     min-height: 90vh;
+    padding: 60px 20px;
 }
+
+/* Main Content Container */
+.main {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
 section .main{
     display: flex;
     justify-content: space-between;
@@ -184,18 +199,20 @@ section .main{
 }
 
 .main .image{
-    /* width: 35vw; */
     height: 60vh;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 50px #540e14;
-    margin-left: 23px;
+    /* margin-left: 5px; */
+    margin: 50px,60px;
 }
 
 .main .image img{
     width: 100%;
     height: 100%;
     background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main .image:hover{
@@ -225,6 +242,8 @@ section .main{
 .content h1 span{
     color: #540e14;
     text-shadow: 0 0 10px #540e14;
+    font-size: 1.5rem;
+    font-weight: 550;
 }
 .content .typewriter{
     font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
@@ -240,18 +259,24 @@ section .main{
     margin: 10px 0;
 }
 
+/* Social Media Links */
+.social-links {
+    margin-top: 40px;
+    padding-left: 51px;
+    padding-right: 10px;
+}
+
 .social-links i{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
-    background-color: #b4676e;
+    background-color: #662228;
     border-radius: 50%;
-    /* color: #540e14; */
     margin: 5px 15px;
     font-size: 1.5rem;
-    transition: 0.2s linear;
+    transition: 0.3s ease;
 }
 
 .social-links i:hover{
@@ -261,8 +286,10 @@ section .main{
     filter: drop-shadow(0 0 10px #540e14 );
 }
 
-.content button{
-    width: 50%;
+/* Button */
+.custom-butn button{
+    padding: 12px 30px;
+    width: 80%;
     height: 6vh;
     margin: 30px;
     background-color: #540e14;
@@ -272,10 +299,12 @@ section .main{
     font-size: 120%;
     font-weight: 700;
     border-radius: 5px;
+    cursor: pointer;
     transition: 0.2s linear;
+    transition: background-color 0.3s ease;
 }
 
-.content button:hover{
+.custom-butn button:hover{
     scale: 1.1;
     color: #540e14;
     border: 2px solid #540e14;
@@ -284,19 +313,136 @@ section .main{
     box-shadow: 0 0 40px #540e14;
 }
 
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* main section css end */
+
+
+
+
+
+
+
+
 /* about section style */
 
+.about{
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
 section .content{
-    width: 80%;
+    max-width: 1200px;
     margin: 0px auto;
     font-family: 'psppins', sans-serif;
 }
-
-.about .about-details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Title styling */
+.about .title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #540e14;
 }
+
+/* About details container */
+.about-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between left and right sections */
+}
+
+.typewriter-text{
+    font-size: 2.2rem;
+}
+
+/* Left section (image) */
+.left {
+    flex: 1;
+    max-width: 40%;
+}
+
+.left img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right section (text) */
+.right {
+    flex: 2;
+    max-width: 55%;
+    text-align: center;
+}
+
+.right .topic {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #540e14;
+    margin-bottom: 20px;
+}
+
+.right p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.custom-butn {
+    text-align: center;
+}
+
+.custom-butn button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #540e14;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.custom-butn button:hover {
+    background-color: #a69697;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .about-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        max-width: 80%;
+    }
+
+    .right {
+        max-width: 80%;
+    }
+}
+
+
+
 section .title{
     display: flex;
     justify-content: center;
@@ -329,7 +475,7 @@ section .title span::after{
     width: 45%;
 }
 .about .left img{
-    height: 400px;
+    height: 50%;
     width: 400px;
     object-fit: cover;
     border-radius: 12px;
@@ -345,7 +491,9 @@ section .topic{
 }
 .about-details .right p{
     text-align: justify;
-    color: white;
+    color: rgb(34, 2, 2);
+    font-size: 1rem;
+    font-weight: 500;
 }
 section .button{
     margin: 16px 0;
@@ -368,59 +516,78 @@ section .button button:hover{
     background-color: #fff;
     color: #540e14;
 }
+/* about section and line end  */
 
-.skills{
-    background-color: black;
+
+
+/* skill css start */
+
+/* Overall layout */
+.skill {
+    padding: 20px;
+    height: auto;
+    background-color: gray;
 }
-.skills .skills-details{
+
+/* Content container */
+.skill .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Title */
+.skill .title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Skills details section */
+.skills-details {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
-.skills-details .text{
-    width: 50%;
+
+
+/* Text section */
+.text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 900;
 }
-.skills-details p{
-    color: white;
-    text-align: justify;
-}
-.skills .skills-details .experience{
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-}
-.skills-details .experience .num{
-    color: white;
-    font-size: 80px;
-}
-.skills-details .experience .exp{
-    color: white;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 6px;
-}
-.skills-details .boxes{
-    width: 45%;
+
+/* Boxes container (Flexbox layout for boxes) */
+.boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-.skills-details .box{
-    width: calc(100% /2 -20px);
-    margin: 20px 0;
-}
-.skills-details .boxes .topic{
-    font-size: 2rem;
-    color: #540e14;
-    margin-left:6vw;
-}
-.skills-details .boxes .per{
-    font-size: 3rem;
-    color: #540e14;
-    margin-left: 5vw;
+    justify-content: center;
+    gap: 20px; /* Adds space between the boxes */
 }
 
+/* Individual skill box */
+.box {
+    background-color: #540e14;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+/* skill css end */
+
+.services{
+    height: auto;
+}
 .services .boxes{
     display: flex;
     flex-wrap: wrap;
@@ -428,13 +595,13 @@ section .button button:hover{
 }
 .services .boxes .box{
     margin: 20px 0;
-    width: calc(100% /3 -20px);
+    width: calc(100% /2 -10px);
     text-align: center;
     border-radius: 12px ;
     padding: 30px 10px ;
     box-shadow: 0 5px 10px rgb(0,0,0,0.12);
     cursor: default;
-    color: white;
+    color: black;
     transition: all 0.4s ease;
 }
 .services .boxes .box:hover{
@@ -443,18 +610,18 @@ section .button button:hover{
 }
 .services .boxes .box .icon{
     height: 50px;
-    width: 50px;
+    width: 60px;
     background: #540e14;
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
     font-size: 18px;
-    color: #fff;
+    color: #0fcddb;
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
 .boxes .box:hover .icon{
-    background-color: #fff;
+    background-color: #000000;
     color: #540e14;
 }
 .services .boxes .box:hover .topic,
@@ -468,17 +635,29 @@ section .button button:hover{
 }
 
 /* contact me css */
+.contact{
+    
+    height: auto;
+}
+
 .contact .content{
     margin: 0 auto;
     padding: 30px 0;
 }
+.contact .text a{
+    text-decoration: none;
+    color: white;
+}
 .contact .text{
+    text-decoration: none;
     width: 50%;
     text-align: center;
     margin: auto;
 }
 
 footer{
+    height: auto;
+    color: #000;
     background: #540e14;
     padding: 15px 0;
     text-align: center;
@@ -487,11 +666,11 @@ footer{
 footer .text samp{
     font-size: 17px;
     font-weight: 400;
-    color: #fff;
+    color: #210808;
 }
 footer .text span a{
     font-weight: 500;
-    color: #fff;
+    color: #0f0202;
 }
 footer .text span a:hover{
     text-decoration: underline;

@@ -1,221 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Apna Custom CSS -->
     <link rel="stylesheet" href="portfolio.css">
     <!-- problem -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!--  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
 </head>
+
 <body>
     <!-- navgation menu -->
-  <!-- Updated HTML for navigation menu -->
-<nav>
-    <div class="nav-contain">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-            <span>Arya</span>
-        </div>
-        <div class="links">
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Contact</a></div>
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="toggleDropdown()"></i>
-    </div>
-    <div class="dropdown">
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Contact</a>
-            <i class="fa-solid fa-xmark cancle" onclick="toggleDropdown()"></i>             
-        </div>
-    </div>
-    
-</nav>
+    <!-- Updated HTML for navigation menu -->
+    <nav>
+        <div class="nav-contain">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Arya</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="#">Skills</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                        href="#">Contact</a>
+                </div>
 
-   <section>
-    <div class="main">
-        <div class="image" data-aos="zoom-in" data-aos-duration="2000" >
-            <img src="logo.png" alt="img">
+            </div>
+            <!-- <i class="fa-solid fa-bars hamburg" onclick="toggleDropdown()"></i> -->
         </div>
-        <div class="content">
-            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
-                Hey I'm
-                <span>Ritik Arya</span>
-             
-            </h1>
-            <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
-                I'm a 
-                <span class="typewriter-text"></span>
-                <label for=""></label>
-            </div>
-            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, incidunt.</p>
-            <div class="social-links">
-                <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>                
-            </div>
-            <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1600">
-                <button>Hire me</button>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancle" onclick="toggleDropdown()"></i>
             </div>
         </div>
-    </div>
-   </section>
+
+    </nav>
 
 
-   <!-- About section start -->
-
-   <section class="About" id="About">
-    <div class="content">
-        <div class="title"> <span>About Me</span></div>
-        <div class="about-details">
-            <div class="left">
-                <img src="main.jpeg" alt="">
+    <!--main section start -->
+    <section>
+        <div class="main">
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="main.jpeg" alt="img">
             </div>
-            <div class="right">
-                <div class="topic">Designing is my passion</div>
-                <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, nemo officia! Reprehenderit similique voluptates fugiat, nisi totam accusantium nihil quibusdam, corrupti deleniti magnam odio? Harum delectus dolorum recusandae est expedita. sit amet.</p>
-                <div class="button">
-                    <button>Download CV</button>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Hey I'm
+                    <span>Ritik Arya</span>
+
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
+                    I'm a
+                    <span class="typewriter-text"></span>
+                    <label for=""></label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Commodi, incidunt.</p>
+                <div class="social-links">
+
+                    <a href="https://github.com/r061narya" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ritik-arya-a03519324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i
+                            class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ri_says_/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="custom-butn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1600">
+                    <button><a href="https://mail.google.com/mail/r061narya@gmail.com">Hire me</a></button>
                 </div>
             </div>
         </div>
-    </div>
-   </section>
+    </section>
+
+
+    <!-- About section start -->
+    <section class="about-section" id="About">
+        <div class="content">
+            <div class="title"> <span>About Me</span></div>
+            <div class="about-details">
+                <div class="left">
+                    <img src="main.jpeg" alt="img">
+                </div>
+                <div class="right">
+                    <div class="topic">A Curious Mind with a Passion for Growth</div>
+                    <p>  Hi, I'm Ritik Arya, a first-year B-Tech student with a keen interest in programming, design, and problem-solving. 
+                        I thrive on learning new skills and challenging myself to push boundaries. As an introvert, I find joy in deep thinking and meticulous planning, 
+                        which helps me craft creative and impactful projects. Currently, I'm honing my expertise in C and Python programming, alongside exploring 
+                        basic electronics and understanding core engineering principles. My approach is rooted in patience, persistence, and continuous improvement, 
+                        making me a quick learner and a reliable team player.</p>
+                    <div class="custom-butn">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+
 
 
     <!-- my skill section start -->
-<section class="skill" id="skills">
-    <div class="content">
-        <div class="title"><span>My Skills</span></div>
-        <div class="skills-details">
-            <div class="text">
-                <div class="topic">
-                    Skills Reflect Our Knowledge
+    <section class="skill" id="skills">
+        <div class="content">
+            <br>
+            <div class="title"><span>My Skills</span></div>
+            <br></br>
+            <div class="skills-details">
+                <div class="text">
+                    <div class="topic">
+                        <p data-aos="zoom-out">Skills Reflect Our Knowledge</p>
+                    </div>
+                    <div class="experience">
+                        <div class="num">01</div>
+                        <div class="exp">Year of experience</div>
+                    </div>
                 </div>
-                <p data-aos="fade-right">Lorem ipsum d</p>
-                <div class="experience">
-                    <div class="num">01</div>
-                    <div class="exp">Year of experience</div>
+                <div class="boxes">
+
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                        <div class="topic"><i class="fa fa-html5"></i> HTML</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                        <div class="topic"><i class="fa fa-html5"></i> CSS</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100">
+                        <div class="topic"><i class="fa fa-html5"></i> JavaScript</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%;"></div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- my skill section end -->
+
+
+
+    <!-- my service section start -->
+    <section class="services" id="services">
+        <div class="content">
+            <br>
+            <div class="title"><span>My services</span></div>
+            <br>
             <div class="boxes">
                 <div class="box">
-                    <div class="topic">HTML</div>
-                    <div class="per">90%</div>
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="topic">Web Devlopment</div>
+                    <p>I specialize in crafting responsive, user-friendly, and visually appealing websites. 
+                        With a strong foundation in programming languages like HTML, CSS, and JavaScript, 
+                        I focus on delivering seamless web experiences tailored to client needs.
+                   </p>
+
                 </div>
                 <div class="box">
-                    <div class="topic">CSS</div>
-                    <div class="per">60%</div>
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="topic">Video Editing</div>
+                    <p>  From storytelling to visual effects, I bring creativity and precision to video editing. 
+                        I ensure every project captures attention and communicates effectively, blending aesthetics with purpose.
+                   </p>
+
                 </div>
                 <div class="box">
-                    <div class="topic">React</div>
-                    <div class="per">50%</div>
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="topic">Digital Marketing</div>
+                    <p>I assist in building impactful online presence through strategic digital marketing. 
+                        From SEO to social media strategies, I help brands reach their target audience and achieve measurable growth.
+                  </p>
+
                 </div>
                 <div class="box">
-                    <div class="topic">Node.js</div>
-                    <div class="per">40%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">JavaScript</div>
-                    <div class="per">5%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">C</div>
-                    <div class="per">77%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">Python</div>
-                    <div class="per">70%</div>
+                    <div class="icon">
+                        <i class="fas fa-android"></i>
+                    </div>
+                    <div class="topic">Icon design</div>
+                    <p>I create custom, minimalist icons that enhance user interfaces and leave a lasting impression. 
+                        Each design is tailored to align with the brand identity and improve visual communication.
+                   </p>
+
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- my skill section end -->
+    </section>
 
+    <!-- contact me section start -->
+    <section class="contact" id="contact">
+        <div class="content">
 
-
-<!-- my service section start -->
- <section class="services" id="services">
-    <div class="content">
-        <div class="title"><span>My services</span></div>
-        <div class="boxes">
-            <div class="box">
-                <div class="icon">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <div class="topic">Web Devlopment</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, possimus iste voluptatum omnis mollitia dolor beatae temporibus repudiandae quam! Officia ut quam, voluptates eum ullam nesciunt consequuntur tempore sequi asperiores!</p>
-
+            <div class="title"><span>contact me</span>
+                <br>
             </div>
-            <div class="box">
-                <div class="icon">
-                    <i class="fas fa-paint-brush"></i>
+            <br>
+            <div class="text">
+                <div class="topic">Got a Project in Mind?</div>
+                <p>If you're looking for someone who's passionate about web development, video editing, or creating compelling digital solutions, I'd love to hear from you. Let's collaborate and bring your ideas to life with creativity and precision!</p>
+                <div class="custom-butn">
+                    <button><a href="https://wa.me/qr/DKTM474NH5MBA1"> Let's Chat</a></button>
                 </div>
-                <div class="topic">Video Editing</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, possimus iste voluptatum omnis mollitia dolor beatae temporibus repudiandae quam! Officia ut quam, voluptates eum ullam nesciunt consequuntur tempore sequi asperiores!</p>
-
-            </div>
-            <div class="box">
-                <div class="icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="topic">Digital Marketing</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, possimus iste voluptatum omnis mollitia dolor beatae temporibus repudiandae quam! Officia ut quam, voluptates eum ullam nesciunt consequuntur tempore sequi asperiores!</p>
-
-            </div>
-            <div class="box">
-                <div class="icon">
-                    <i class="fas fa-android"></i>
-                </div>
-                <div class="topic">Icon design</div>
-                <p>Lorem ipsum dolor sit <p>hllll</p>met consectetur adipisicing elit. Alias, possimus iste voluptatum omnis mollitia dolor beatae temporibus repudiandae quam! Officia ut quam, voluptates eum ullam nesciunt consequuntur tempore sequi asperiores!</p>
-
             </div>
         </div>
-    </div>
- </section>
+    </section>
 
- <!-- contact me section start -->
-  <section class="contact" id="contact">
-    <div class="content">
-        <div class="title"><span>contact me</span>
+    <!-- footer section start -->
+    <footer>
+        <div class="tex">
+            <span>created by XYZ
+                &#169 2024 All Right Reserved
+            </span>
         </div>
-        <div class="text">
-            <div class="topic">Have any porgect?</div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt cumque esse maxime, dolorum eos, ipsam, deleniti iure expedita fugit placeat consectetur eligendi aliquid commodi labore officia voluptatum veritatis exercitationem officiis!</p>
-        <div class="button">
-            <button>Let's Chat</button>
-        </div>
-        </div>
-    </div>
-  </section>
+    </footer>
+    <!-- problam -->
 
-  <!-- footer section start -->
-   <footer>
-    <div class="tex">
-        <span>created by XYZ
-            &#169 2024 All Right Reserved
-        </span>
-    </div>
-   </footer>
-<!-- problam -->
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script>
-     AOS.init({offset:0});
-   </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-   <script src="portfolio.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- apna custom JS     -->
+    <script src="portfolio.js"></script>
+
 
 </body>
+
 </html>
 
 <!-- now im soo fustrated too pus this thing on github  -->

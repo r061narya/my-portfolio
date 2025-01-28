@@ -17,7 +17,7 @@ body{
 }
 body p{
     font-size: x-large;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
 }
 /* custom scroll bar css */
@@ -71,8 +71,8 @@ nav{
 
 .logo {
     color: black;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .logo span {
@@ -89,7 +89,7 @@ nav{
     /* right: 15px;
     top: 10px; */
     color:green;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    font-size: clamp(2rem, 0.5rem + 5vw, 3rem);
     display: none;
 }
 
@@ -257,7 +257,7 @@ section .main{
     font-weight: 550;
 }
 .content .typewriter{
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-size: clamp(1rem, 1rem + 5vw, 2rem);
     font-weight: 600;
 }
 .content .typewriter-text{
@@ -364,7 +364,7 @@ section .content{
 /* Title styling */
 .about .title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 30px;
     color: #540e14;
